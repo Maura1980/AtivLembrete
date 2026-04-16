@@ -44,7 +44,7 @@ function menu() {
     })
 }
 
-funtion adicionar() {
+function adicionar() {
     rl.question('Digite o lembrete: ', (texto) => {
         rl.question('Digite o prazo', (prazo) => {
             const novoLembrete = {
@@ -63,17 +63,17 @@ funtion adicionar() {
     });
 }
 
-funtion listar() {
+function listar() {
      if (lembretes.length === 0){
         console.log("Não existem lembretes cadastrados!");
         voltarMenu();
     } else {
         console.log('===Lista de Lembretes===');
-        lembretes.forEach(item,index) => {
-         console.log(
+        lembretes.forEach((item,index) => {
+         console.log(`
             ${index}. ${item.lembrete} | prazo
-         )
-        }
+         `)
+        })
         voltarMenu();
     }
 };
