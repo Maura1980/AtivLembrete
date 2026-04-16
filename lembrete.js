@@ -1,3 +1,5 @@
+/* TAREFA*/
+
 //Logica Principal: configurar readline, criar variáveis globais (vetor de lembretes), e executar.
 // Módulos:
 // * Executar o menú com as opcões
@@ -7,6 +9,7 @@
 // * Editar: listar, selecionar um lembrete, perguntar as novas informações do lembrete, e salvar na posição
 // * Marcar como Concluido: listar, selecionar um lembrete e marcar como concluido como true.
 
+RESPOSTA:
 
 const readline = require("readline");
 const rl = readline.createInterface({
@@ -126,3 +129,4 @@ lembretes.forEach((item, index) =>{
 }
 
 executar()
+ /*SOLUÇÃO*/
