@@ -9,7 +9,7 @@
 // * Editar: listar, selecionar um lembrete, perguntar as novas informações do lembrete, e salvar na posição
 // * Marcar como Concluido: listar, selecionar um lembrete e marcar como concluido como true.
 
-RESPOSTA:
+
 
 const readline = require("readline");
 const rl = readline.createInterface({
@@ -110,7 +110,7 @@ return executar();
 }
 
 listarSemMenu();
-rl.question("Selecione o indice para maracar como concluido:",(index) => {
+rl.question("Selecione o indice para marcar como concluido:",(index) => {
 if (lembretes[index].concluido = true){
 consolo.log("Lembrete marcado como concluido");
 }else{
@@ -121,7 +121,7 @@ consolo.log("Lembrete marcado como concluido");
 }
 
 function listarSemMenu() {
-console.log("\n Lembretes:");
+console.log("*Lembretes:");
 lembretes.forEach((item, index) =>{
     console.log(`${index} .${item. lembrete}|Prazo:$(item.prazo}|Concluido:${item.concluido}
     `);
@@ -129,4 +129,4 @@ lembretes.forEach((item, index) =>{
 }
 
 executar()
- /*SOLUÇÃO*/
+
